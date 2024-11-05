@@ -9,11 +9,11 @@ public class Main {
         Conversao cambio1 = new Conversao();
         Scanner scanner = new Scanner(System.in);
 
-        int opcao = 0;
+        int opcao = -1;
 
         casaDeCambio.mostrarMenuBemVindo();
 
-        while (opcao != -1) {
+        while (opcao != 0) {
             try {
                 casaDeCambio.mostrarMenuMoedas();
 
@@ -39,8 +39,6 @@ public class Main {
                 System.out.println("Erro de entrada/saída: " + e.getMessage());
             } catch (InterruptedException e) {
                 System.out.println("A operação foi interrompida: " + e.getMessage());
-            } catch (Exception e) {
-                System.out.println("Um erro inesperado ocorreu: " + e.getMessage());
             }
         }
         System.out.println("Programa encerrado. Obrigado por utilizar a casa de câmbio do tio Patinhas.");

@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 
 public class APIService {
 
-    private String apiKey = "";
+    private String apiKey = "ad3f9b60b5d90f25fe4865b0";
     private String urlBase = "https://v6.exchangerate-api.com/v6/";
     private String pairString = "/pair/";
 
